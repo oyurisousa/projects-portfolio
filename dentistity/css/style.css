@@ -10,9 +10,12 @@
 
 :root {
   --text-color: white;
+  --text-color-black: black;
   --color-button: black;
+  --color-button-cyan: #00CAE0;
   --color-background: #032F54;
   --border-teste: 1px solid red;
+  --border-teste2: 1px solid green;
   --backgroundImage-face: url('../assets/images/face-woman.png');
 }
 
@@ -25,28 +28,51 @@ body {
   max-width: 1440;
   width: 100%;
   margin: 0 auto;
+  background-color: #032F54;
 
 }
 a {
   font-size: 14em;
   text-decoration: none;
 }
+button{
+  border: none;
+}
 
 /* sectioncover */
 section.cover {
   max-width: 1440px;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  max-height: 590px;
   margin: 0 auto;
+
+  /* background: linear-gradient(180deg, #04090D 0%, rgba(3, 46, 84, 0.00) 100%); */
+  z-index: 5;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%); */
+  /* background-color: white; */
 }
 
 .background {
   display: flex;
   width: 100%;
   height: 100%;
+  /* max-width: 1280px; */
+  margin: 0 auto;
   background-color: var(--color-background);
-  border-bottom-right-radius: 20%;
+  border-bottom-right-radius: 200px;
   position: relative;
+}
+
+.start-actions{
+  width: 95%;
+  max-width: 1250px;
+  height: 550px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 header {
@@ -55,24 +81,30 @@ header {
   align-items: center;
   max-width: 1440px;
   width: 100%;
-  position: absolute;
-  height: 100px;
-  padding: 0 2%;
-  border: var(--border-teste)
+  height: 60px;
+  
+  z-index: 2;
 }
 
-header.logo {
-  width: 60px;
+header .logo {
+  width: 150px;
   height: auto;
+}
+
+header nav{
+  font-size: 0.8em;
+  display: flex;
+  gap: 16px;
 }
 
 button.action {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* gap: 16px; */
-  width: 300px;
-  height: 64px;
+  gap: 5px;
+  width: 25%;
+  max-width: 220px;
+  height: 45px;
   padding: 20px;
   border-radius: 30px;
   background-color: var(--color-button);
@@ -80,24 +112,111 @@ button.action {
 }
 
 .action span {
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 .background .emphasis{
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+.emphasis h2{
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+
+.emphasis h1{
+  font-size: 66px;
+  width: 80%;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  line-height: 70px;
+  padding-bottom: 25px;
+}
+
+.emphasis p{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  width: 70%;
+}
+
+.emphasis .actions{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.actions button.request{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-button-cyan);
+  width: 35%;  
+  max-width: 300px;
+  height: 55px;
+  border-radius: 28px;
+}
+
+button.request span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--text-color-black);
+  letter-spacing: 1px;
+}
+
+button.request svg{
+  fill: black;
+  width: 30px;
+}
+
+.actions button.telephone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  width: 35%;  
+  max-width: 260px;
+  height: 45px;
+  border-radius: 28px;
+}
+.telephone .phone-call{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  padding: 2px;
+}
+.phone-call img{
+  width: 20px;
+  height: 20px;
+}
+
+.telephone span{
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: black;
 }
 
 .background .face{
-  width: 500px;
-  height: auto;
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  max-width: 604px;
+  top: 0;
+  right:0;
   background-image: var(--backgroundImage-face);
-  background-size: 140%;
+  background-size: 160%;
   background-position: top;
   background-repeat: no-repeat;
   border-radius: 0 0 200px 200px ;
-  /* margin-left: 1000;  */
-  
-  /* margin-top: 100px; */
-  
 
 }
