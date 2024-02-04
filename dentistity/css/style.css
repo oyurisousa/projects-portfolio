@@ -37,6 +37,7 @@ a {
 }
 button{
   border: none;
+  cursor: pointer;
 }
 
 /* sectioncover */
@@ -506,4 +507,107 @@ section.plans{
   line-height: 102%;
   letter-spacing: 5%;
 
+}
+
+/* special */
+section.special{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+}
+
+.special .contain{
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.main-special{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.learning-centers{
+  width: 100%;
+  height: 180px;
+  background-color: #1c4365;
+  border-top-right-radius: 140px;
+  font-family: "Playfair Display";
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.learning-centers h3{
+  font-size: 30px;
+  line-height: 96%;
+  font-family: "Playfair Display";
+  font-weight: normal;
+
+}
+
+.learning-centers h4{
+  font-size: 18px;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  color: #00CAE0;
+
+}
+.dental-implants{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dental-implants h2{
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 96%;
+}
+.dental-implants p{
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+.dental-implants button{
+  width: 130px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.dental-implants button span{
+  color: #00CAE0;
+  font-size: 14px;
+  font-weight: lighter;
+  
+}
+
+
+.image-special{
+  width: 40%;
+  height: 500px;
+  background-image: url('../assets/images/dentists.png');
+  border-radius: 200px 200px 0 0;
+  background-size: 100%;
 }
