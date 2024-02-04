@@ -603,11 +603,98 @@ section.special{
   
 }
 
-
 .image-special{
   width: 40%;
   height: 500px;
   background-image: url('../assets/images/dentists.png');
   border-radius: 200px 200px 0 0;
   background-size: 100%;
+}
+
+
+/* our-services */
+
+section.our-services{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-services .contain{
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.text-our-services{
+  width: 53%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.our-services h2{
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 54px;
+  color: black;
+  line-height: 96%;
+  margin-bottom: 20px;
+}
+
+.our-services p{
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  line-height: 159%;
+  font-size: 13px;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ufesul-links{
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ufesul-links .single-link{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed #838383;
+}
+.ufesul-links:last-child{
+  border-bottom: 1px dashed #838383;;
+}
+.single-link h3{
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  line-height: 96%;
+}
+
+.single-link button{
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  
+}
+
+.single-link button span{
+  color: #00CAE0;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 14px;
 }
