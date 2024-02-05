@@ -3,6 +3,6 @@
 ## 🚀 Wait...
 
 
-## 💻 Projeto
+## 💻 Project
 
 ._.
